@@ -10,14 +10,14 @@ _Ce repository regroupe tous les travaux pratiques réalisés au cours des anné
 _Dans ce dossier se trouve tous les cours de Bachelor 3._
 
 
-- Jakarta Spring boot ;
-- PHP Symfony ;
+- Jakarta Entreprise Edition (JEE)  ;
+- Framework Symfony - Projet ;
 
 
-| Nom de la matière    | Nom du dossier | Status  |
-|----------------------|-----------------|---------|
-| Jakarta Spring Boot  | `jakarta-spring`            | ![Terminé](https://img.shields.io/badge/Terminé-brightgreen)  |
-| PHP Symfony  | `symfony`            | ![Terminé](https://img.shields.io/badge/Terminé-brightgreen)  |
+| Nom de la matière    | Nom du dossier | Status | Lien |
+|----------------------|-----------------|-------|------|
+| Jakarta Entreprise Edition (JEE)  | `jakarta-spring`            | ![Terminé](https://img.shields.io/badge/Terminé-brightgreen)  | [🔗](https://github.com/armanceau/EFREI/tree/main/B3/jakarta-spring) |
+| Framework Symfony - Projet  | `symfony`            | ![Terminé](https://img.shields.io/badge/Terminé-brightgreen)  | [🔗](https://github.com/armanceau/EFREI/tree/main/B3/symfony) |
 
 ### M1
 
