@@ -13,7 +13,6 @@ class EmployerTest extends TestCase
         $this->assertEquals(123, $employer->getMatricule());
         $this->assertEquals("arthur", $employer->getNom());
         $this->assertEquals(100, $employer->salaire());
-        //todo tester setter & getter é detail
         $employer->setMatricule(456);
         $this->assertEquals(456,  $employer->getMatricule());
         $employer->setNom("axelle");
