@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 5px 15px 5px 15px;
+            color: #fff;
+            background-color: #E23E23;
+            border: none;
+            border-radius: 2em;
+            cursor: pointer;
+            transition: .2s;
+        }
+        button:hover{
+            box-shadow: 0px 2px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="incrementCounter()">Click!</button>
+
+    <script>
+        function incrementCounter() {
+            // Utiliser JavaScript pour envoyer une requête POST au serveur Flask
+            fetch('/', {
+                method: 'POST',
+            });
+        }
+    </script>
+</body>
+</html>

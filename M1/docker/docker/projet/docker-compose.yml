@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  app: 
+    image: app
+    ports:
+      - target: 5000
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+    ports:
+      - '5432:5432'
+
+  pgadmin4:
+    image: elestio/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 9276.asahi@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_LISTEN_PORT: 3030
+    ports:
+    - "8080:3030"
+    depends_on:
+      - postgres
+
+  
