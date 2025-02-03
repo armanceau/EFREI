@@ -2,6 +2,8 @@
 
 namespace Arthu\TestUnitaire;
 
+use PHPUnit\Framework\Exception;
+
 class Calculator
 {
     public function add(int $a, int $b)
@@ -16,7 +18,7 @@ class Calculator
     public function divide(int $a, int $b)
     {
         if($a == 0 || $b == 0){
-            return "Division by zero";
+            throw new \Exception("Division by zero");
         }
         return $a / $b;
     }

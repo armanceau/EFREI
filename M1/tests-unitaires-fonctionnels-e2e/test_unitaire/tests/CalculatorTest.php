@@ -30,6 +30,8 @@ class CalculatorTest extends TestCase
 
     public function testDivideByZero(){
         $calculator = new Calculator();
-        $this->assertEquals('Division by zero', $calculator->divide(0, 2));
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage("Division by zero");
+        $calculator->divide(2, 0);
     }
 }
