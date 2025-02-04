@@ -3,7 +3,7 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="C:\wamp64\www\EFREI\M1\tests-unitaires-fonctionnels-e2e\tests" />
+        <option value="$PROJECT_DIR$/tests" />
       </list>
     </option>
   </component>
