@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/B3/jakarta-spring/JEE-firstExercice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/B3/jakarta-spring/JO-API-Spring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/B3/jakarta-spring/efrei-spring-boot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/M1/microservices/ms-api-gateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/M1/microservices/ms-auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/M1/renforcement-full-js/API-fast-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/M1/renforcement-full-js/TypeScriptEx1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/M1/renforcement-full-js/VueExFrontAPi" vcs="Git" />
+  </component>
+</project>
