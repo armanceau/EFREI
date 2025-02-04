@@ -32,6 +32,7 @@ class PokemonTest extends TestCase
         $pokemon2 = new Pokemon("rayane", 100, 50);
         $pokemon2->attaquer($pokemon);
         $this->assertTrue($pokemon->isDead());
+        $this->assertFalse($pokemon2->isDead());
     }
 
     public function testToString(){
