@@ -32,11 +32,6 @@ class UserManager {
         $stmt->execute(['name' => $name, 'email' => $email]);
     }
 
-    public function removeUser(int $id): void {
-        $stmt = $this->db->prepare("DELETE FROM users WHERE id = :id");
-        $stmt->execute(['id' => $id]);
-    }
-
     public function getUsers(): array {
         $stmt = $this->db->query("SELECT * FROM users");
         return $stmt->fetchAll();
@@ -50,7 +45,16 @@ class UserManager {
         return $user;
     }
 
+    public function removeUser(int $id): void {
+        $user = $this->getUser($id);
+        if(!$user) throw new Exception("Utilisateur introuvable.");
+        $stmt = $this->db->prepare("DELETE FROM users WHERE id = :id");
+        $stmt->execute(['id' => $id]);
+    }
+
     public function updateUser(int $id, string $name, string $email): void {
+        $user = $this->getUser($id);
+        if(!$user) throw new Exception("Utilisateur introuvable.");
         $stmt = $this->db->prepare("UPDATE users SET name = :name, email = :email WHERE id = :id");
         $stmt->execute(['id' => $id, 'name' => $name, 'email' => $email]);
     }

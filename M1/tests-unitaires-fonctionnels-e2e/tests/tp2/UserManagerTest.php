@@ -43,13 +43,22 @@ class UserManagerTest extends TestCase
         $this->userManager->resetTable();
 
         $this->userManager->addUser('Jane Doe', 'jane.doe@example.com');
-
-        $this->userManager->removeUser(2);
-
+        $this->userManager->removeUser(1);
 
         $this->expectException(Exception::class);
         $this->expectExceptionMessage("Utilisateur introuvable.");
-        $this->userManager->getUser(2);
+        $this->userManager->getUser(1);
+    }
+
+    public function testInvalidDeleteThrowsException(): void
+    {
+        $this->userManager->resetTable();
+
+        $this->userManager->addUser('Jane Doe', 'jane.doe@example.com');
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Utilisateur introuvable.");
+        $this->userManager->removeUser(40);
     }
 
     public function testGetUsers(): void
@@ -97,5 +106,17 @@ class UserManagerTest extends TestCase
         $user = $this->userManager->getUser(1);
         $this->assertEquals('John Updated', $user['name']);
         $this->assertEquals('john.updated@example.com', $user['email']);
+    }
+
+    public function testInvalidUpdateThrowsException(): void
+    {
+        $this->userManager->resetTable();
+
+        $this->userManager->addUser('John Doe', 'john.doe@example.com');
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Utilisateur introuvable.");
+
+        $this->userManager->updateUser(50, 'John Updated', 'john.updated@example.com');
     }
 }
