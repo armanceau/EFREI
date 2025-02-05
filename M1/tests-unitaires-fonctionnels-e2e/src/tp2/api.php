@@ -1,4 +1,7 @@
 <?php
+
+use Arthu\TestUnitaire\tp2\UserManager;
+
 require_once 'UserManager.php';
 header("Content-Type: application/json");
 
