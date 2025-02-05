@@ -1,11 +1,8 @@
 {
-    "name": "arthu/test_unitaire",
-    "require-dev": {
-        "phpunit/phpunit": "^10.5"
-    },
+    "name": "arthu/tests-unitaires-fonctionnels-e2e",
     "autoload": {
         "psr-4": {
-            "Arthu\\TestUnitaire\\": "src/"
+            "Arthu\\TestsUnitairesFonctionnelsE2e\\": "src/"
         }
     },
     "authors": [
