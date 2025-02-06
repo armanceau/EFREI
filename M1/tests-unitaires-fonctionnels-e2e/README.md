@@ -5,7 +5,7 @@
 
 Cloner le projet :
 ```bash
-git clone https://github.com/armanceau/TaskFlow.git
+git clone https://github.com/armanceau/EFREI/tree/main/M1/tests-unitaires-fonctionnels-e2e
 ```
 
 Se déplacer dans le projet :
